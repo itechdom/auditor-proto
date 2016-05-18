@@ -21,6 +21,7 @@ class todoAction{
 			todoModelUpdate$
 		}
 
+    //remotely load files upon request
 		actions.request$.subscribe(()=>{
 			$('app').empty();
 			load().then(function(file) {

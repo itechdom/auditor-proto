@@ -18,6 +18,7 @@ class adminMain{
 			this.view.render();
 			sidebar.render();
 		});
+
 	}
 }
 module.exports = new adminMain();

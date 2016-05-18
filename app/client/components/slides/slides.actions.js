@@ -8,16 +8,13 @@ class actionMain{
 	constructor(){
 
 		var actions =  {
-
 			request$: clientActions['changeRoute$'].filter((d)=> {
 				return d == "/slides";
 			})
-
 		}
 
 		actions.request$.subscribe(()=>{
 			load().then(function(file) {
-
 			});
 		})
 
