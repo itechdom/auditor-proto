@@ -1,6 +1,8 @@
 import React from "react";
 
 import Title from "./Header/Title";
+import RaisedButton from 'material-ui/RaisedButton';
+
 
 export default class Header extends React.Component {
 
@@ -14,6 +16,7 @@ export default class Header extends React.Component {
       <div>
         <Title title={this.props.title}/>
         <input value={this.props.title} onChange={this.handleChange.bind(this)}/>
+        <RaisedButton label="HELLO" />
       </div>
     );
   }
